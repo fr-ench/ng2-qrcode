@@ -1,6 +1,7 @@
 /// <reference path="ng2-qrcode.d.ts"/>
 
 import {
+  NgModule,
   Component,
   Input,
   ElementRef,
@@ -64,5 +65,11 @@ export class QRCodeComponent implements OnChanges, OnInit {
       this.qrcode.makeCode(qrData.currentValue);
     }
   }
-
 }
+
+@NgModule({
+    exports: [ QRCodeComponent ],
+    declarations: [ QRCodeComponent],
+    entryComponents: [ QRCodeComponent ]
+})
+export class QRCodeModule { }

@@ -13,5 +13,8 @@
   "files": [
     "ng2-qrcode/ng2-qrcode.ts",
     "typings/browser.d.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "genDir": "compiled"
+  }
 }

@@ -23,7 +23,7 @@
   "typings": "dist/ng2-qrcode",
   "scripts": {
     "preinstall": "npm i typings -g",
-    "prepublish": "typings install && tsc",
+    "prepublish": "typings install && tsc && ngc",
     "postinstall": "typings install"
   },
   "dependencies": {
@@ -35,12 +35,15 @@
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
+    "@angular/compiler": "^2.4.8",
+    "@angular/compiler-cli": "^2.4.8",
+    "@angular/platform-server": "^2.4.8",
     "codelyzer": "0.0.26",
-    "ts-loader": "^0.8",
     "es6-promise": "^3.0",
     "es6-shim": "^0.35",
+    "ts-loader": "^0.8",
     "tslint": "3.13.0",
-    "typescript": "^1.8.10",
+    "typescript": "^2.2.1",
     "typings": "^0.8.1"
   }
 }
