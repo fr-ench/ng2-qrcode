@@ -15,3 +15,5 @@ export declare class QRCodeComponent implements OnChanges, OnInit {
         [propertyName: string]: SimpleChange;
     }): void;
 }
+export declare class QRCodeModule {
+}

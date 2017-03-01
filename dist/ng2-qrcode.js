@@ -89,4 +89,17 @@ QRCodeComponent = __decorate([
     __metadata("design:paramtypes", [core_1.ElementRef])
 ], QRCodeComponent);
 exports.QRCodeComponent = QRCodeComponent;
+var QRCodeModule = (function () {
+    function QRCodeModule() {
+    }
+    return QRCodeModule;
+}());
+QRCodeModule = __decorate([
+    core_1.NgModule({
+        exports: [QRCodeComponent],
+        declarations: [QRCodeComponent],
+        entryComponents: [QRCodeComponent]
+    })
+], QRCodeModule);
+exports.QRCodeModule = QRCodeModule;
 //# sourceMappingURL=ng2-qrcode.js.map
